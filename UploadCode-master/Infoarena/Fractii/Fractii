@@ -1,0 +1,1708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cod sursa (job #1335528)</title>
+<link type="text/css" rel="stylesheet" href="/static/css/sitewide.css">
+<link type="text/css" rel="stylesheet" href="/static/css/iconize.css">
+<link type="text/css" rel="stylesheet" href="/static/css/screen.css">
+<link type="text/css" rel="stylesheet" href="/static/css/tabber.css">
+<link type="text/css" rel="stylesheet" href="/static/css/highlight-theme.css">
+<link type="text/css" rel="stylesheet" href="/static/css/print.css" media="print">
+<link rel="icon" href="https://infoarena.ro/favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript" src="/static/js/config.js.php"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/default.js"></script>
+<script type="text/javascript" src="/static/js/tabber-minimized.js"></script>
+<script type="text/javascript" src="/static/js/submit.js"></script>
+<script type="text/javascript" src="/static/js/remotebox.js"></script>
+<script type="text/javascript" src="/static/js/postdata.js"></script>
+<script type="text/javascript" src="/static/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/static/js/highlight-line-numbers.min.js"></script>
+<script type="text/javascript" src="/static/js/tags.js"></script>
+<script type="text/javascript" src="/static/js/roundtimer.js"></script>
+<script type="text/javascript" src="/static/js/restoreparity.js"></script>
+<script type="text/javascript" src="/static/js/foreach.js"></script>
+<script type="text/javascript" src="/static/js/sorttable.js"></script>
+<script type="text/javascript" src="/static/js/tablednd.js"></script>
+<script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
+    </script>
+<style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+<body id="infoarena">
+<div id="page">
+<div id="header" class="clear">
+<div id="userbox">
+<a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="https://infoarena.ro/avatar/normal/cyg_SerbanB" alt="cyg_SerbanB"></a> <div class="user">
+<strong>Florin Gheorghe</strong><br>
+<a title="Rating cyg_SerbanB: 496" class="rating-badge-4" href="https://www.infoarena.ro/utilizator/cyg_SerbanB?action=rating">•</a> <a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a><br>
+<a class="logout" href='javascript:PostData("\/logout", [])'>logout</a><noscript>&lt;form class="inline_form" method="post" action="/logout"&gt;&lt;input type="submit" style="margin: 0; padding: 0" value="&amp;#10003;" /&gt;&lt;/form&gt;</noscript> |
+<a accesskey="c" href="/account"><span class="access-key">c</span>ontul meu</a> </div>
+</div>
+<h1><a href="/">infoarena informatica de performanta</a></h1>
+</div>
+<div id="topnav">
+<ul>
+<li>
+<strong> <a href="/">info<em>arena</em></a> </strong> </li>
+<li>
+<a accesskey="b" href="/blog"><span class="access-key">b</span>log</a> </li>
+<li>
+<a accesskey="f" href="https://infoarena.ro/forum"><span class="access-key">f</span>orum</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=calendar">calendar</a> </li>
+<li>
+<a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><span class="access-key">p</span>rofilul meu</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=pm">mesaje</a> </li>
+</ul>
+</div>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+</div>
+<div id="footer">
+<ul class="clear">
+<li class="copyright">©&nbsp;2004-2023&nbsp;<a href="/Asociatia-infoarena">Asociatia infoarena</a></li>
+<li class="separate"><a href="/">Prima pagina</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li><a href="/termeni-si-conditii">Termeni si conditii</a></li>
+<li><a href="/contact">Contact</a></li>
+<li class="top"><a href="#header">Sari la inceputul paginii ↑</a></li>
+</ul>
+<p class="cc">
+
+<a class="badge" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/"><img alt="Creative Commons License" src="/static/images/CreativeCommonsBadge.png"></a>
+Cu exceptia cazurilor in care se specifica altfel, continutul site-ului infoarena<br>este publicat sub licenta <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5</a>.
+
+<rdf:rdf xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<work rdf:about="">
+<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/">
+</license></work>
+<license rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction">
+<permits rdf:resource="http://web.resource.org/cc/Distribution">
+<requires rdf:resource="http://web.resource.org/cc/Notice">
+<requires rdf:resource="http://web.resource.org/cc/Attribution">
+<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse">
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks">
+</permits></prohibits></requires></requires></permits></permits></license>
+</rdf:rdf>
+</p>
+</div>
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+<script type="text/javascript">
+    _uacct = "UA-113289-8";
+    _udn = "infoarena.ro";
+    urchinTracker();
+    </script>
+
+
+</body></html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cod sursa (job #1335528)</title>
+<link type="text/css" rel="stylesheet" href="/static/css/sitewide.css">
+<link type="text/css" rel="stylesheet" href="/static/css/iconize.css">
+<link type="text/css" rel="stylesheet" href="/static/css/screen.css">
+<link type="text/css" rel="stylesheet" href="/static/css/tabber.css">
+<link type="text/css" rel="stylesheet" href="/static/css/highlight-theme.css">
+<link type="text/css" rel="stylesheet" href="/static/css/print.css" media="print">
+<link rel="icon" href="https://infoarena.ro/favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript" src="/static/js/config.js.php"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/default.js"></script>
+<script type="text/javascript" src="/static/js/tabber-minimized.js"></script>
+<script type="text/javascript" src="/static/js/submit.js"></script>
+<script type="text/javascript" src="/static/js/remotebox.js"></script>
+<script type="text/javascript" src="/static/js/postdata.js"></script>
+<script type="text/javascript" src="/static/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/static/js/highlight-line-numbers.min.js"></script>
+<script type="text/javascript" src="/static/js/tags.js"></script>
+<script type="text/javascript" src="/static/js/roundtimer.js"></script>
+<script type="text/javascript" src="/static/js/restoreparity.js"></script>
+<script type="text/javascript" src="/static/js/foreach.js"></script>
+<script type="text/javascript" src="/static/js/sorttable.js"></script>
+<script type="text/javascript" src="/static/js/tablednd.js"></script>
+<script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
+    </script>
+<style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+<body id="infoarena">
+<div id="page">
+<div id="header" class="clear">
+<div id="userbox">
+<a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="https://infoarena.ro/avatar/normal/cyg_SerbanB" alt="cyg_SerbanB"></a> <div class="user">
+<strong>Florin Gheorghe</strong><br>
+<a title="Rating cyg_SerbanB: 496" class="rating-badge-4" href="https://www.infoarena.ro/utilizator/cyg_SerbanB?action=rating">•</a> <a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a><br>
+<a class="logout" href='javascript:PostData("\/logout", [])'>logout</a><noscript>&lt;form class="inline_form" method="post" action="/logout"&gt;&lt;input type="submit" style="margin: 0; padding: 0" value="&amp;#10003;" /&gt;&lt;/form&gt;</noscript> |
+<a accesskey="c" href="/account"><span class="access-key">c</span>ontul meu</a> </div>
+</div>
+<h1><a href="/">infoarena informatica de performanta</a></h1>
+</div>
+<div id="topnav">
+<ul>
+<li>
+<strong> <a href="/">info<em>arena</em></a> </strong> </li>
+<li>
+<a accesskey="b" href="/blog"><span class="access-key">b</span>log</a> </li>
+<li>
+<a accesskey="f" href="https://infoarena.ro/forum"><span class="access-key">f</span>orum</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=calendar">calendar</a> </li>
+<li>
+<a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><span class="access-key">p</span>rofilul meu</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=pm">mesaje</a> </li>
+</ul>
+</div>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+</div>
+<div id="footer">
+<ul class="clear">
+<li class="copyright">©&nbsp;2004-2023&nbsp;<a href="/Asociatia-infoarena">Asociatia infoarena</a></li>
+<li class="separate"><a href="/">Prima pagina</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li><a href="/termeni-si-conditii">Termeni si conditii</a></li>
+<li><a href="/contact">Contact</a></li>
+<li class="top"><a href="#header">Sari la inceputul paginii ↑</a></li>
+</ul>
+<p class="cc">
+
+<a class="badge" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/"><img alt="Creative Commons License" src="/static/images/CreativeCommonsBadge.png"></a>
+Cu exceptia cazurilor in care se specifica altfel, continutul site-ului infoarena<br>este publicat sub licenta <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5</a>.
+
+<rdf:rdf xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<work rdf:about="">
+<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/">
+</license></work>
+<license rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction">
+<permits rdf:resource="http://web.resource.org/cc/Distribution">
+<requires rdf:resource="http://web.resource.org/cc/Notice">
+<requires rdf:resource="http://web.resource.org/cc/Attribution">
+<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse">
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks">
+</permits></prohibits></requires></requires></permits></permits></license>
+</rdf:rdf>
+</p>
+</div>
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+<script type="text/javascript">
+    _uacct = "UA-113289-8";
+    _udn = "infoarena.ro";
+    urchinTracker();
+    </script>
+
+
+</body>
+<div id="page">
+<div id="header" class="clear">
+<div id="userbox">
+<a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="https://infoarena.ro/avatar/normal/cyg_SerbanB" alt="cyg_SerbanB"></a> <div class="user">
+<strong>Florin Gheorghe</strong><br>
+<a title="Rating cyg_SerbanB: 496" class="rating-badge-4" href="https://www.infoarena.ro/utilizator/cyg_SerbanB?action=rating">•</a> <a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a><br>
+<a class="logout" href='javascript:PostData("\/logout", [])'>logout</a><noscript>&lt;form class="inline_form" method="post" action="/logout"&gt;&lt;input type="submit" style="margin: 0; padding: 0" value="&amp;#10003;" /&gt;&lt;/form&gt;</noscript> |
+<a accesskey="c" href="/account"><span class="access-key">c</span>ontul meu</a> </div>
+</div>
+<h1><a href="/">infoarena informatica de performanta</a></h1>
+</div>
+<div id="topnav">
+<ul>
+<li>
+<strong> <a href="/">info<em>arena</em></a> </strong> </li>
+<li>
+<a accesskey="b" href="/blog"><span class="access-key">b</span>log</a> </li>
+<li>
+<a accesskey="f" href="https://infoarena.ro/forum"><span class="access-key">f</span>orum</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=calendar">calendar</a> </li>
+<li>
+<a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><span class="access-key">p</span>rofilul meu</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=pm">mesaje</a> </li>
+</ul>
+</div>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+</div>
+<div id="header" class="clear">
+<div id="userbox">
+<a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="https://infoarena.ro/avatar/normal/cyg_SerbanB" alt="cyg_SerbanB"></a> <div class="user">
+<strong>Florin Gheorghe</strong><br>
+<a title="Rating cyg_SerbanB: 496" class="rating-badge-4" href="https://www.infoarena.ro/utilizator/cyg_SerbanB?action=rating">•</a> <a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a><br>
+<a class="logout" href='javascript:PostData("\/logout", [])'>logout</a><noscript>&lt;form class="inline_form" method="post" action="/logout"&gt;&lt;input type="submit" style="margin: 0; padding: 0" value="&amp;#10003;" /&gt;&lt;/form&gt;</noscript> |
+<a accesskey="c" href="/account"><span class="access-key">c</span>ontul meu</a> </div>
+</div>
+<h1><a href="/">infoarena informatica de performanta</a></h1>
+</div>
+<div id="topnav">
+<ul>
+<li>
+<strong> <a href="/">info<em>arena</em></a> </strong> </li>
+<li>
+<a accesskey="b" href="/blog"><span class="access-key">b</span>log</a> </li>
+<li>
+<a accesskey="f" href="https://infoarena.ro/forum"><span class="access-key">f</span>orum</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=calendar">calendar</a> </li>
+<li>
+<a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><span class="access-key">p</span>rofilul meu</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=pm">mesaje</a> </li>
+</ul>
+</div>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div>
+<pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code>
+<pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+<<pseudo>></<pseudo>>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+<div id="page">
+<div id="header" class="clear">
+<div id="userbox">
+<a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="https://infoarena.ro/avatar/normal/cyg_SerbanB" alt="cyg_SerbanB"></a> <div class="user">
+<strong>Florin Gheorghe</strong><br>
+<a title="Rating cyg_SerbanB: 496" class="rating-badge-4" href="https://www.infoarena.ro/utilizator/cyg_SerbanB?action=rating">•</a> <a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a><br>
+<a class="logout" href='javascript:PostData("\/logout", [])'>logout</a><noscript>&lt;form class="inline_form" method="post" action="/logout"&gt;&lt;input type="submit" style="margin: 0; padding: 0" value="&amp;#10003;" /&gt;&lt;/form&gt;</noscript> |
+<a accesskey="c" href="/account"><span class="access-key">c</span>ontul meu</a> </div>
+</div>
+<h1><a href="/">infoarena informatica de performanta</a></h1>
+</div>
+<div id="topnav">
+<ul>
+<li>
+<strong> <a href="/">info<em>arena</em></a> </strong> </li>
+<li>
+<a accesskey="b" href="/blog"><span class="access-key">b</span>log</a> </li>
+<li>
+<a accesskey="f" href="https://infoarena.ro/forum"><span class="access-key">f</span>orum</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=calendar">calendar</a> </li>
+<li>
+<a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><span class="access-key">p</span>rofilul meu</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=pm">mesaje</a> </li>
+</ul>
+</div>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+</div>
+<div id="footer">
+<ul class="clear">
+<li class="copyright">©&nbsp;2004-2023&nbsp;<a href="/Asociatia-infoarena">Asociatia infoarena</a></li>
+<li class="separate"><a href="/">Prima pagina</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li><a href="/termeni-si-conditii">Termeni si conditii</a></li>
+<li><a href="/contact">Contact</a></li>
+<li class="top"><a href="#header">Sari la inceputul paginii ↑</a></li>
+</ul>
+<p class="cc">
+
+<a class="badge" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/"><img alt="Creative Commons License" src="/static/images/CreativeCommonsBadge.png"></a>
+Cu exceptia cazurilor in care se specifica altfel, continutul site-ului infoarena<br>este publicat sub licenta <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5</a>.
+
+<rdf:rdf xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<work rdf:about="">
+<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/">
+</license></work>
+<license rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction">
+<permits rdf:resource="http://web.resource.org/cc/Distribution">
+<requires rdf:resource="http://web.resource.org/cc/Notice">
+<requires rdf:resource="http://web.resource.org/cc/Attribution">
+<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse">
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks">
+</permits></prohibits></requires></requires></permits></permits></license>
+</rdf:rdf>
+</p>
+</div>
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+<script type="text/javascript">
+    _uacct = "UA-113289-8";
+    _udn = "infoarena.ro";
+    urchinTracker();
+    </script>
+<body id="infoarena">
+<div id="page">
+<div id="header" class="clear">
+<div id="userbox">
+<a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="https://infoarena.ro/avatar/normal/cyg_SerbanB" alt="cyg_SerbanB"></a> <div class="user">
+<strong>Florin Gheorghe</strong><br>
+<a title="Rating cyg_SerbanB: 496" class="rating-badge-4" href="https://www.infoarena.ro/utilizator/cyg_SerbanB?action=rating">•</a> <a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a><br>
+<a class="logout" href='javascript:PostData("\/logout", [])'>logout</a><noscript>&lt;form class="inline_form" method="post" action="/logout"&gt;&lt;input type="submit" style="margin: 0; padding: 0" value="&amp;#10003;" /&gt;&lt;/form&gt;</noscript> |
+<a accesskey="c" href="/account"><span class="access-key">c</span>ontul meu</a> </div>
+</div>
+<h1><a href="/">infoarena informatica de performanta</a></h1>
+</div>
+<div id="topnav">
+<ul>
+<li>
+<strong> <a href="/">info<em>arena</em></a> </strong> </li>
+<li>
+<a accesskey="b" href="/blog"><span class="access-key">b</span>log</a> </li>
+<li>
+<a accesskey="f" href="https://infoarena.ro/forum"><span class="access-key">f</span>orum</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=calendar">calendar</a> </li>
+<li>
+<a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><span class="access-key">p</span>rofilul meu</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=pm">mesaje</a> </li>
+</ul>
+</div>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+</div>
+<div id="footer">
+<ul class="clear">
+<li class="copyright">©&nbsp;2004-2023&nbsp;<a href="/Asociatia-infoarena">Asociatia infoarena</a></li>
+<li class="separate"><a href="/">Prima pagina</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li><a href="/termeni-si-conditii">Termeni si conditii</a></li>
+<li><a href="/contact">Contact</a></li>
+<li class="top"><a href="#header">Sari la inceputul paginii ↑</a></li>
+</ul>
+<p class="cc">
+
+<a class="badge" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/"><img alt="Creative Commons License" src="/static/images/CreativeCommonsBadge.png"></a>
+Cu exceptia cazurilor in care se specifica altfel, continutul site-ului infoarena<br>este publicat sub licenta <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5</a>.
+
+<rdf:rdf xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<work rdf:about="">
+<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/">
+</license></work>
+<license rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction">
+<permits rdf:resource="http://web.resource.org/cc/Distribution">
+<requires rdf:resource="http://web.resource.org/cc/Notice">
+<requires rdf:resource="http://web.resource.org/cc/Attribution">
+<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse">
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks">
+</permits></prohibits></requires></requires></permits></permits></license>
+</rdf:rdf>
+</p>
+</div>
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+<script type="text/javascript">
+    _uacct = "UA-113289-8";
+    _udn = "infoarena.ro";
+    urchinTracker();
+    </script>
+
+
+</body>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cod sursa (job #1335528)</title>
+<link type="text/css" rel="stylesheet" href="/static/css/sitewide.css">
+<link type="text/css" rel="stylesheet" href="/static/css/iconize.css">
+<link type="text/css" rel="stylesheet" href="/static/css/screen.css">
+<link type="text/css" rel="stylesheet" href="/static/css/tabber.css">
+<link type="text/css" rel="stylesheet" href="/static/css/highlight-theme.css">
+<link type="text/css" rel="stylesheet" href="/static/css/print.css" media="print">
+<link rel="icon" href="https://infoarena.ro/favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript" src="/static/js/config.js.php"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/default.js"></script>
+<script type="text/javascript" src="/static/js/tabber-minimized.js"></script>
+<script type="text/javascript" src="/static/js/submit.js"></script>
+<script type="text/javascript" src="/static/js/remotebox.js"></script>
+<script type="text/javascript" src="/static/js/postdata.js"></script>
+<script type="text/javascript" src="/static/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/static/js/highlight-line-numbers.min.js"></script>
+<script type="text/javascript" src="/static/js/tags.js"></script>
+<script type="text/javascript" src="/static/js/roundtimer.js"></script>
+<script type="text/javascript" src="/static/js/restoreparity.js"></script>
+<script type="text/javascript" src="/static/js/foreach.js"></script>
+<script type="text/javascript" src="/static/js/sorttable.js"></script>
+<script type="text/javascript" src="/static/js/tablednd.js"></script>
+<script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
+    </script>
+<style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+<body id="infoarena">
+<div id="page">
+<div id="header" class="clear">
+<div id="userbox">
+<a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="https://infoarena.ro/avatar/normal/cyg_SerbanB" alt="cyg_SerbanB"></a> <div class="user">
+<strong>Florin Gheorghe</strong><br>
+<a title="Rating cyg_SerbanB: 496" class="rating-badge-4" href="https://www.infoarena.ro/utilizator/cyg_SerbanB?action=rating">•</a> <a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a><br>
+<a class="logout" href='javascript:PostData("\/logout", [])'>logout</a><noscript>&lt;form class="inline_form" method="post" action="/logout"&gt;&lt;input type="submit" style="margin: 0; padding: 0" value="&amp;#10003;" /&gt;&lt;/form&gt;</noscript> |
+<a accesskey="c" href="/account"><span class="access-key">c</span>ontul meu</a> </div>
+</div>
+<h1><a href="/">infoarena informatica de performanta</a></h1>
+</div>
+<div id="topnav">
+<ul>
+<li>
+<strong> <a href="/">info<em>arena</em></a> </strong> </li>
+<li>
+<a accesskey="b" href="/blog"><span class="access-key">b</span>log</a> </li>
+<li>
+<a accesskey="f" href="https://infoarena.ro/forum"><span class="access-key">f</span>orum</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=calendar">calendar</a> </li>
+<li>
+<a accesskey="p" href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><span class="access-key">p</span>rofilul meu</a> </li>
+<li>
+<a href="https://infoarena.ro/forum?action=pm">mesaje</a> </li>
+</ul>
+</div>
+<div id="content_small" class="clear">
+<div id="sidebar">
+<ul id="nav" class="clear">
+<li><a href="/">Home</a></li>
+<li><a accesskey="a" href="/arhiva"><span class="access-key">A</span>rhiva de probleme</a></li>
+<li><a href="/arhiva-educationala">Arhiva educatională</a></li>
+<li><a href="/arhiva-monthly">Arhiva monthly</a></li>
+<li><a href="/arhiva-acm">Arhiva ACM</a></li>
+<li><a href="/concursuri">Concursuri</a></li>
+<li><a href="/concursuri-virtuale">Concursuri virtuale</a></li>
+<li><a href="/clasament-rating">Clasament</a></li>
+<li><a href="/articole">Articole</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/documentatie">Documentaţie</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li class="separator"><hr></li>
+<li><a accesskey="m" href="/monitor?user=cyg_SerbanB"><span class="access-key">M</span>onitorul de evaluare</a></li>
+<li><a href="/submit"><strong>Trimite soluţii</strong></a></li>
+<li><a accesskey="c" href="/account"><span class="access-key">C</span>ontul meu</a></li>
+</ul>
+<div id="google-search">
+
+<form id="searchbox_010130381492294265836:kw-fmmvpxco" action="https://infoarena.ro/search">
+<fieldset>
+<legend><img src="/static/images/icons/search.png" alt="!"> Cautare</legend>
+<input type="hidden" name="cx" value="010130381492294265836:kw-fmmvpxco">
+<input type="hidden" name="cof" value="FORID:9">
+<input name="q" type="text" size="22">
+<input type="submit" name="sa" value="Cauta" class="button important">
+</fieldset>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=searchbox_010130381492294265836%3Akw-fmmvpxco"></script>
+
+</div>
+<div id="calendar">
+<div class="calendar"><div class="header"><a href="https://infoarena.ro/forum?action=calendar">In curand...</a></div></div> </div>
+<p class="user-count">159675 membri inregistrati</p>
+<div id="srv_time" class="user-count" align="center">17:30:59</div>
+<script type="text/javascript" src="/static/js/time.js"></script>
+<script type="text/javascript">loadTime(17, 30, 35);</script>
+<div class="ad">
+<div class="wiki_text_block"><p class="center" style="text-align:center"><a href="/implica-te">Fii un bun infoarenaut! Implică-te!</a></p></div></div>
+</div>
+<div id="main">
+<p id="breadcrumbs">Pagini recente » <a href="/monitor?user=cyg_SerbanB">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/2988305?action=view-source">Cod sursa (job #2988305)</a> <span class="separator">|</span> <a href="/monitor?user=cyg_SerbanB&amp;display_entries=25&amp;first_entry=575">Monitorul de evaluare</a> <span class="separator">|</span> <a href="/job_detail/1331833?action=view-source">Cod sursa (job #1331833)</a> <span class="separator">|</span> <strong>Cod sursa (job #1335528)</strong></p>
+<h1>Cod sursa(job <a href="/job_detail/1335528">#1335528</a>)</h1>
+<table class="job">
+<tbody><tr>
+<th class="user-id">Utilizator</th>
+<td class="user-id"><span class="tiny-user"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB"><img src="/avatar/tiny/cyg_SerbanB" alt="cyg_SerbanB">Florin Gheorghe</a> <span class="username"><a href="https://www.infoarena.ro/utilizator/cyg_SerbanB">cyg_SerbanB</a></span></span></td>
+<th class="submit-time">Data</th>
+<td class="submit-time"> 5 februarie 2015 17:33:24</td>
+</tr>
+<tr>
+<th class="task-id">Problema</th>
+<td class="task-id"><a href="/problema/perechi">Perechi</a></td>
+<th class="score">Scor</th>
+<td class="score">100</td>
+</tr>
+
+<tr>
+<th class="compiler-id">Compilator</th>
+<td class="compiler-id">cpp</td>
+<th class="status">Status</th>
+<td class="status"><strong>done</strong></td>
+</tr>
+<tr>
+<th class="round-id">Runda</th>
+<td class="round-id" colspan="1">
+<a href="/arhiva">Arhiva de probleme</a></td>
+<th class="size">Marime</th>
+<td class="size">0.5 kb</td>
+</tr>
+</tbody></table>
+<div class="report">
+<a href="https://infoarena.ro/forum?action=post;topic=403">Raporteaza aceasta sursa</a>
+</div>
+<div class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;fstream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function">ifstream <span class="hljs-title">in</span><span class="hljs-params">(<span class="hljs-string">"perechi.in"</span>)</span></span>;
+<span class="hljs-function">ofstream <span class="hljs-title">out</span><span class="hljs-params">(<span class="hljs-string">"perechi.out"</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> n,d,e,ans=<span class="hljs-number">1</span>;
+    in&gt;&gt;n;
+    <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+    {
+        d=<span class="hljs-number">2</span>;
+        <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">1</span> &amp;&amp; d*d&lt;=n)
+        {
+            e=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">while</span>(n%d==<span class="hljs-number">0</span>)
+                e++,n/=d;
+            <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">0</span>)
+            {
+                ans=ans*(<span class="hljs-number">2</span>*e+<span class="hljs-number">1</span>);
+            }
+            d++;
+        }
+        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">1</span>)
+            ans=ans*(<span class="hljs-number">2</span>*<span class="hljs-number">1</span>+<span class="hljs-number">1</span>);
+    }
+    ans=(ans+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>;
+    out&lt;&lt;ans;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre></div></div>
+</div>
+</div>
+<div id="footer">
+<ul class="clear">
+<li class="copyright">©&nbsp;2004-2023&nbsp;<a href="/Asociatia-infoarena">Asociatia infoarena</a></li>
+<li class="separate"><a href="/">Prima pagina</a></li>
+<li><a href="/despre-infoarena">Despre infoarena</a></li>
+<li><a href="/termeni-si-conditii">Termeni si conditii</a></li>
+<li><a href="/contact">Contact</a></li>
+<li class="top"><a href="#header">Sari la inceputul paginii ↑</a></li>
+</ul>
+<p class="cc">
+
+<a class="badge" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/"><img alt="Creative Commons License" src="/static/images/CreativeCommonsBadge.png"></a>
+Cu exceptia cazurilor in care se specifica altfel, continutul site-ului infoarena<br>este publicat sub licenta <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5</a>.
+
+<rdf:rdf xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<work rdf:about="">
+<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/">
+</license></work>
+<license rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction">
+<permits rdf:resource="http://web.resource.org/cc/Distribution">
+<requires rdf:resource="http://web.resource.org/cc/Notice">
+<requires rdf:resource="http://web.resource.org/cc/Attribution">
+<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse">
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks">
+</permits></prohibits></requires></requires></permits></permits></license>
+</rdf:rdf>
+</p>
+</div>
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+<script type="text/javascript">
+    _uacct = "UA-113289-8";
+    _udn = "infoarena.ro";
+    urchinTracker();
+    </script>
+
+
+</body></html>

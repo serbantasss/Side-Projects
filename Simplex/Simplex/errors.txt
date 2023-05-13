@@ -1,0 +1,9 @@
+Error	1	error C2039: 'min' : is not a member of 'std'	e:\temp\simplex\simplex\matrix.cpp	821	1	Simplex
+Error	2	error C3861: 'min': identifier not found	e:\temp\simplex\simplex\matrix.cpp	821	1	Simplex
+	5	IntelliSense: namespace "std" has no member "min"	e:\temp\Simplex\Simplex\matrix.cpp	821	41	Simplex
+Warning	3	warning C4244: 'argument' : conversion from 'long double' to 'int', possible loss of data	e:\temp\simplex\simplex\matrix.cpp	828	1	Simplex
+Warning	4	warning C4244: 'argument' : conversion from 'long double' to 'int', possible loss of data	e:\temp\simplex\simplex\matrix.cpp	911	1	Simplex
+
+
+put in #include <algorithm>
+in matrix.cpp

@@ -1,0 +1,17 @@
+﻿Build started 20/10/2015 20:15:50.
+     1>Project "C:\dump\Simplex\Simplex\Simplex.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Simplex.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         Simplex.vcxproj -> C:\dump\Simplex\Debug\Simplex.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Simplex.unsuccessfulbuild".
+         Touching "Debug\Simplex.lastbuildstate".
+     1>Done Building Project "C:\dump\Simplex\Simplex\Simplex.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.09

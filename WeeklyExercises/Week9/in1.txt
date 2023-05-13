@@ -1,0 +1,10 @@
+this # is a hashtag
+no hashtags here
+
+an empty line above# !!!
+se#ver#al# has#htags here
+######## here too
+and here#############
+#
+##
+###
